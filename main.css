@@ -46,10 +46,10 @@ table {
 *	General
 */
 .bg__orange {
-	background-color: #FFE599;
+	background-color: #FFE599!important;
 }
 .bg__mark {
-	background-color: #f1e01d;
+	background-color: #f1e01d!important;
 }
 .bg__sliver {
 	background-color: #c1c1c1!important;
@@ -77,6 +77,70 @@ table {
 .grid__5 {
     grid-template-columns: repeat(5, 1fr);
 }
+
+.grid__gap__c__10 {
+	grid-column-gap: 10px;
+}
+
+.grid__gap__r__10 {
+	grid-row-gap: 10px;
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+		
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+		
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+		
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+		.grid__2 {
+			grid-template-columns: 1fr;
+		}
+
+		.grid__4 {
+			grid-template-columns: 1fr;
+		}
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+		.grid__2 {
+			grid-template-columns: 1fr;
+		}
+
+		.grid__4 {
+			grid-template-columns: 1fr;
+		}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * {
 	padding: 0;
@@ -131,17 +195,37 @@ a {
     transition-property: border-color, background-color, color;
 }
 
+
+.no__border__top {
+	border-top: none!important;
+}
+
 .no__border__bottom {
-	border-bottom: 0!important;
+	border-bottom: none!important;
 }
 
 .border__right__f__1 {
 	border-right: 2px solid #000;
 }
 
+/*======= Start: Margin Fw ========*/
+.m__0 {
+	margin: 0!important;
+}
+.m__t__0 {
+	margin-top: 0!important;
+}
+.m__b__0 {
+	margin-bottom: 0!important;
+}
+/*======= End: Margin Fw ========*/
+
 /*======= Start: Padding Fw ========*/
 .p__0 {
 	padding: 0!important;
+}
+.p__t__0 {
+	padding-top: 0!important;
 }
 .p__b__0 {
 	padding-bottom: 0!important;
@@ -358,6 +442,7 @@ a {
 	border: 2px solid #000;
 	margin-bottom: 12px;
 	text-align: center;
+	word-break: break-word;
 }
 
 .header__item__table_vertical, .header__item__table {
